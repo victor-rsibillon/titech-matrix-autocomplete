@@ -1,0 +1,12 @@
+{
+  "addons": {
+    "titech-automatrix.addons@cameylia.com": {
+      "updates": [
+        {
+          "version": "1.1",
+          "update_link": "https://raw.githubusercontent.com/victor-rsibillon/titech-matrix-autocomplete/master/release/titech-matrix-autocomplete_1.1.xpi"
+        }
+      ]
+    }
+  }
+}

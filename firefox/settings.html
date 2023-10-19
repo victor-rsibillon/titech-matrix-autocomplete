@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>TITech Portal Configuration</title>
+    <script src="lib/tailwindcss-3.3.3.min.js"></script>
+</head>
+
+<body>
+<div class="px-2 py-3 bg-neutral-200">
+    <div class="flex flex-row">
+        <img src="icons/brand-48.png" alt="TITech Auto login icon"/>
+        <div class="my-auto ml-2">
+            <h4 class="text-xl">TITech Auto Login Configuration</h4>
+            <h6 class="text-neutral-600 text-sm right">v1.0 (October 2023)</h6>
+        </div>
+    </div>
+</div>
+<div class="px-2 py-4 max-w-sm">
+    <form>
+        <div class="grid gap-4 mb-6">
+            <div>
+                <label
+                        for="username"
+                        class="block mb-2 text-lg font-medium text-gray-900">
+                    Username / Student ID
+                </label>
+                <div class="ml-2">
+                    <input type="text"
+                           id="username"
+                           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full py-1.5 px-2"
+                           placeholder="ie. 22X12345"
+                           required>
+                </div>
+            </div>
+            <div>
+                <label
+                        class="block mb-2 text-lg font-medium text-gray-900">
+                    Matrix
+                </label>
+                <div class="ml-2 grid gap-2">
+                    <label
+                            for="matrix-l1"
+                            class="block mb-1 text-sm font-medium text-gray-900">
+                        First line of the matrix (A1 > J1)
+                    </label>
+                    <input id="matrix-l1"
+                           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full py-1.5 px-2"
+                           placeholder="ie. VZIEQUYHHK"
+                           required>
+                    <label
+                            for="matrix-l2"
+                            class="block mb-1 text-sm font-medium text-gray-900">
+                        Second line of the matrix (A2 > J2)
+                    </label>
+                    <input id="matrix-l2"
+                           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full py-1.5 px-2"
+                           placeholder="ie. VZIEQUYHHK"
+                           required>
+                    <label
+                            for="matrix-l3"
+                            class="block mb-1 text-sm font-medium text-gray-900">
+                        Third line of the matrix (A3 > J3)
+                    </label>
+                    <input id="matrix-l3"
+                           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full py-1.5 px-2"
+                           placeholder="ie. VZIEQUYHHK"
+                           required>
+
+                    <label
+                            for="matrix-l4"
+                            class="block mb-1 text-sm font-medium text-gray-900">
+                        Fourth line of the matrix (A4 > J4)
+                    </label>
+                    <input id="matrix-l4"
+                           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full py-1.5 px-2"
+                           placeholder="ie. VZIEQUYHHK"
+                           required>
+                    <label
+                            for="matrix-l5"
+                            class="block mb-1 text-sm font-medium text-gray-900">
+                        Fifth line of the matrix (A5 > J5)
+                    </label>
+                    <input id="matrix-l5"
+                           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full py-1.5 px-2"
+                           placeholder="ie. VZIEQUYHHK"
+                           required>
+                    <label
+                            for="matrix-l6"
+                            class="block mb-1 text-sm font-medium text-gray-900">
+                        Sixth line of the matrix (A6 > J6)
+                    </label>
+                    <input id="matrix-l6"
+                           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full py-1.5 px-2"
+                           placeholder="ie. VZIEQUYHHK"
+                           required>
+                    <label
+                            for="matrix-l7"
+                            class="block mb-1 text-sm font-medium text-gray-900">
+                        Seventh line of the matrix (A7 > J7)
+                    </label>
+                    <input id="matrix-l7"
+                           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full py-1.5 px-2"
+                           placeholder="ie. VZIEQUYHHK"
+                           required>
+                    <div class="flex items-start my-2">
+                        <div class="flex items-center h-5">
+                            <input id="skip-matrix" type="checkbox" value=""
+                                   class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300"
+                                   required>
+                        </div>
+                        <label for="skip-matrix" class="ml-2 text-sm font-medium text-gray-900">Skip matrix auto
+                            complete</label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" id="update"
+                    class="ml-auto text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">
+                Update config
+            </button>
+
+        </div>
+    </form>
+</div>
+
+<script src="src/settings.js"></script>
+</body>
+</html>
