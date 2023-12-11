@@ -50,7 +50,7 @@ function doActionForMatrix() {
         .includes("Matrix Authentication")) {
         for (let matrix_index = 0; matrix_index < 3; matrix_index++) {
             const output_section = $(`table[id=authentication] input[name=message${matrix_index + 3}]`);
-            const wrapper = output_section.parents().eq(3);
+            const wrapper = output_section.parents().eq(1);
             const cell_location = wrapper.children(":first");
             const cell_value = cell_location[0].textContent;
             const loc = convertLocInput(cell_value);
